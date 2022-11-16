@@ -3,7 +3,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'dense-analysis/ale'
-Plug 'morhetz/gruvbox'
 call plug#end()
 
 "PERSONALS VIM
@@ -16,10 +15,6 @@ set smartindent
 
 "background
 set background=dark
-
-"theme
-colorscheme gruvbox
-set t_Co=256
 
 "add line numbers 
 set number
