@@ -1,37 +1,52 @@
 call plug#begin()
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'dense-analysis/ale'
-call plug#end()
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'preservim/nerdtree'
+  Plug 'vim-airline/vim-airline'
+  Plug 'dense-analysis/ale'
+  call plug#end()
 
-"PERSONALS VIM
-"turns on syntax highlighting
-syntax on
+  "PERSONALS VIM
+  "personal key combinations
+  let mapleader = " "
+  nnoremap <leader>dl dd          " delete current line
+  nnoremap <leader>dw dw          " delete current word
+  nnoremap <leader>delete .,$d    " delete all of file
 
-"formatting
-set autoindent
-set smartindent
-set nocompatible
-
-
-"background
-set background=dark
-
-"add line numbers 
-set number
+  inoremap / <esc>                " enter normal from insert
 
 
 
+  "get a few more scrips and tricks
+  set nocompatible
 
-" ale - linter settings
-  let g:ale_fixers = {
-  \   '*': ['remove_trailing_lines', 'trim_whitespace'],
-  \}
-  let g:ale_fix_on_save = 1
-  let g:ale_sign_column_always = 1
-  let g:ale_sign_error = '>>'
-  let g:ale_sign_warning = '--'
+  "formatting
+  set autoindent
+  set smartindent
+
+  "theming
+  if $COLORTERM == 'gnome-terminal'
+          set t_Co=256
+  endif
+  set background=dark
+  try
+          colorscheme desert
+  catch
+  endtry
+
+
+
+
+
+  " ale - linter settings
+    let g:ale_fixers = {
+    \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \}
+    let g:ale_fix_on_save = 1
+    let g:ale_sign_column_always = 1
+    let g:ale_sign_error = '>>'
+    let g:ale_sign_warning = '--'
+
+
 
 
 
