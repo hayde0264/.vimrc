@@ -12,6 +12,8 @@ syntax on
 "formatting
 set autoindent
 set smartindent
+set nocompatible
+
 
 "background
 set background=dark
