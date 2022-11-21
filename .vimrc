@@ -12,7 +12,7 @@ call plug#begin()
   nnoremap <leader>dw dw          " delete current word
 
 
-  inoremap jfjf <esc>                " enter normal from insert
+  inoremap jf <esc>                " enter normal from insert
 
 
 
