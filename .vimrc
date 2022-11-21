@@ -10,9 +10,9 @@ call plug#begin()
   let mapleader = " "
   nnoremap <leader>dl dd          " delete current line
   nnoremap <leader>dw dw          " delete current word
-  nnoremap <leader>delete .,$d    " delete all of file
 
-  inoremap / <esc>                " enter normal from insert
+
+  inoremap jfjf <esc>                " enter normal from insert
 
 
 
@@ -23,15 +23,6 @@ call plug#begin()
   set autoindent
   set smartindent
 
-  "theming
-  if $COLORTERM == 'gnome-terminal'
-          set t_Co=256
-  endif
-  set background=dark
-  try
-          colorscheme desert
-  catch
-  endtry
 
 
 
