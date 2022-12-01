@@ -1,20 +1,44 @@
-call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'preservim/nerdtree'
-  Plug 'vim-airline/vim-airline'
-  Plug 'dense-analysis/ale'
-  Plug 'cdelledonne/vim-cmake'
-  call plug#end()
-
-  "PERSONALS VIM
-  "personal key combinations
-  let mapleader = " "
-  nnoremap <leader>dl dd          " delete current line
-  nnoremap <leader>dw dw          " delete current word
-
-
-  inoremap jf <esc>                " enter normal from insert
-
+    1 call plug#begin()
+    2 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    3 Plug 'preservim/nerdtree'
+    4 Plug 'vim-airline/vim-airline'
+    5 Plug 'dense-analysis/ale'
+    6 Plug 'cdelledonne/vim-cmake'
+    7 call plug#end()
+    8 
+    9 "PERSONALS VIM
+   10 " personal key combinations"
+   11 let mapleader = " "
+   12 
+   13 
+   14 
+   15 " jump to the begging of the line
+   16 nnoremap <leader>B 0
+   17 
+   18 " jump to the end of the line
+   19 nnoremap <leader>E $
+   20 
+   21 " delete from current position to end of file
+   22 nnoremap <leader>da dG
+   23 
+   24 " search for word in file (n to increment to next case)  
+   25 nnoremap <leader>? /
+   26 
+   27 " enter normal mode
+   28 inoremap jf <esc>
+   29 
+   30 
+   31 
+   32 
+   33 
+   34 
+   35 " get a few more scrips and tricks
+   36 set nocompatible
+   37 
+   38 " formatting
+   39 set autoindent
+   40 set smartindent
+   41 
 
 
   "get a few more scrips and tricks
