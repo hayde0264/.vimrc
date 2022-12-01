@@ -3,6 +3,7 @@ call plug#begin()
   Plug 'preservim/nerdtree'
   Plug 'vim-airline/vim-airline'
   Plug 'dense-analysis/ale'
+  Plug 'cdelledonne/vim-cmake'
   call plug#end()
 
   "PERSONALS VIM
