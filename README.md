@@ -1,3 +1,3 @@
 # .vimrc
 
-Simple setup of vimrc. 
+Simple setup of ./vimrc
